@@ -1,4 +1,5 @@
-/* Play the selected music track */
+/* Play the selected music track, but first pause any music
+being played already. */
 var i, audioEl, sourceMp3, sourceOgg,
     musicAnchor = document.getElementsByClassName("music-anchor");
 
