@@ -21,7 +21,7 @@ nav, section {display: block;}
 
 html, body {height: 100%;}
 
-body {font-family: Verdana, "Trebuchet MS", sans-serif; line-height: 1;}
+body {color: darkslategray; font-family: Verdana, "Trebuchet MS", sans-serif; line-height: 1;}
 
 table {border-collapse: collapse; border-spacing: 0;}
 
@@ -42,12 +42,19 @@ header li, footer li {display: inline; font-size: 1em;}
 header a, footer a {
     text-decoration: none; 
     color: #ffffcc; 
-    text-shadow: 2px 2px 2px black;
     letter-spacing: 0.1px;
     -webkit-transition: letter-spacing 0.5s;
     -moz-transition: letter-spacing 0.5s;
     -o-transition: letter-spacing 0.5s;
     transition: letter-spacing 0.5s;
+}
+
+header a {
+    text-shadow: 2px 2px 2px darkslategray;
+}
+
+footer a {
+    text-shadow: 2px 2px 2px black;
 }
 
 header a:hover, footer a:hover {
@@ -64,19 +71,18 @@ h1, header li, footer li {padding: 10px;}
 
 h1, h2, header li, footer li {text-transform: uppercase;}
 
-h1, h3 {color: darkslategray;}
-
 h1 {
+    color: #94b8b8;
     text-shadow: 2px 2px 2px #ffffcc;
-    font-size: 2em;
-    font-family: Impact, Verdana, "Trebuchet MS", sans-serif;
+    font-size: 3em;
+    font-family: Impact, "Trebuchet MS", sans-serif;
 }
 
 h2, h3 {text-align: center;}
 
 h2 {
     color: white; 
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px darkslategray;
     font-size: 1.75em;
     font-weight: bold;
 }
@@ -435,7 +441,7 @@ span.tab, span.tab2  {
         background-image: url("images/carkeekpk.jpg");
     }
     footer {padding-top: 25px; padding-left: 90px;}
-    h2 {text-shadow: 3px 3px 3px black;}
+    h2 {text-shadow: 3px 3px 3px darkslategray;}
     h3, li {line-height: 1;}
     p {max-width: 50%;}
     #about, #music, #photo {padding: 75px 90px;}
@@ -453,7 +459,7 @@ span.tab, span.tab2  {
 
 @media only screen and (min-width: 2800px) {
     body {font-size: 300%; line-height: 1.5;}
-    h2, header a, footer a {text-shadow: 5px 5px 5px black;}
+    h2, header a, footer a {text-shadow: 5px 5px 5px darkslategray;}
     #about, #music, #photo {padding: 125px 90px;}
     #photo h2, #music h2 {padding-bottom: 80px;}
     .wrap {padding: 1% 65px;}
@@ -464,6 +470,6 @@ span.tab, span.tab2  {
 
 @media only screen and (min-width: 4000px) {
     body {font-size: 400%;}
-    h2 {text-shadow: 10px 10px 10px black;}
+    h2 {text-shadow: 10px 10px 10px darkslategray;}
     #about, #music, #photo {padding: 250px 90px;}
 }
