@@ -5,12 +5,12 @@ i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
 caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
 embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
 section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu,
@@ -20,79 +20,88 @@ nav, section {display: block;}
 
 html, body {height: 100%;}
 
-body {color: darkslategray; font-family: Verdana, "Trebuchet MS", sans-serif; line-height: 1;}
+body {
+  color: darkslategray; 
+  font-family: Verdana, "Trebuchet MS", sans-serif; 
+  line-height: 1;
+}
 
 table {border-collapse: collapse; border-spacing: 0;}
 
 header, #second, #third {
-    background-attachment: scroll;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-    height: 100%; 
-    background-image: url("images/708_carkeekpk.jpg");
+  height: 100%; 
+  background-image: url("images/708_carkeekpk.jpg");
 }
 
 header li, footer li {display: inline; font-size: 1em;} 
 
 header a, footer a {
-    text-decoration: none; 
-    color: #ffffcc; 
-    letter-spacing: 0.1px;
-    -webkit-transition: letter-spacing 0.5s;
-    -moz-transition: letter-spacing 0.5s;
-    -o-transition: letter-spacing 0.5s;
-    transition: letter-spacing 0.5s;
+  text-decoration: none; 
+  color: #ffffcc; 
+  letter-spacing: 0.1px;
+  -webkit-transition: letter-spacing 0.5s;
+  -moz-transition: letter-spacing 0.5s;
+  -o-transition: letter-spacing 0.5s;
+  transition: letter-spacing 0.5s;
 }
 
 header a {
-    text-shadow: 2px 2px 2px darkslategray;
+  text-shadow: 2px 2px 2px darkslategray;
 }
 
 footer a {
-    text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px black;
 }
 
 header a:hover, footer a:hover {
-    letter-spacing: 3px;
-    -webkit-transition: letter-spacing 0.5s;
-    -moz-transition: letter-spacing 0.5s;
-    -o-transition: letter-spacing 0.5s;
-    transition: letter-spacing 0.5s;
+  letter-spacing: 3px;
+  -webkit-transition: letter-spacing 0.5s;
+  -moz-transition: letter-spacing 0.5s;
+  -o-transition: letter-spacing 0.5s;
+  transition: letter-spacing 0.5s;
 }
 
-footer {background-color: #668599; padding: 15px 0 150px 0; margin-top: 25px;}
+footer {
+  background-color: #668599; 
+  padding: 15px 0 150px 0; 
+  margin-top: 25px;
+}
 
 h1, header li, footer li {padding: 10px;}
 
 h1, h2, header li, footer li {text-transform: uppercase;}
 
 h1 {
-    color: #94b8b8;
-    text-shadow: 2px 2px 2px #ffffcc;
-    font-size: 3em;
-    font-family: Impact, "Franklin Gothic Medium", "Trebuchet MS", Candara, sans-serif;
+  color: #94b8b8;
+  text-shadow: 2px 2px 2px #ffffcc;
+  font-size: 3em;
+  font-family: Impact, "Franklin Gothic Medium", "Trebuchet MS", Candara, 
+  sans-serif;
 }
 
 h2, h3 {text-align: center;}
 
 h2 {
-    color: white; 
-    text-shadow: 2px 2px 2px darkslategray;
-    font-size: 1.75em;
-    font-weight: bold;
+  color: white; 
+  text-shadow: 2px 2px 2px darkslategray;
+  font-size: 1.75em;
+  font-weight: bold;
 }
 
 h3 {font-size: 1.15em; padding: 15px 15px 20px;}
 
 p {
-    margin: 0 auto;
-    padding: 15px 25px 35px 25px;
-    line-height: 1.5;
-    text-align: center;
+  margin: 0 auto;
+  padding: 15px 25px 35px 25px;
+  line-height: 1.5;
+  text-align: center;
 }
 
 ul {list-style: none;}
@@ -115,7 +124,9 @@ img, audio  {width: 100%;}
 
 #music li {font-size: 0.8em;}
 
-#music li::first-letter, #music li:first-letter, #music span {font-size: 1.2em;}
+#music li::first-letter, #music li:first-letter, #music span {
+  font-size: 1.2em;
+}
 
 #photo h2, #music div:nth-child(5) h3 {word-break: break-all;}
 
@@ -126,10 +137,10 @@ img, audio  {width: 100%;}
 #img-placeholder {z-index: 1; visibility: hidden;}
 
 #img01, #img02 {
-    will-change: opacity; /* For Google Chrome 36+ */
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+  will-change: opacity; /* For Google Chrome 36+ */
+  position: absolute; 
+  top: 0; 
+  left: 0; 
 }
 
 #img01 {z-index: 3;} 
@@ -147,90 +158,98 @@ img, audio  {width: 100%;}
 .photo-wrap {overflow: hidden;}
 
 .photo-wrap img {
-    /* For Google Chrome */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; 
-    display: block; 
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+  /* For Google Chrome */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+  display: block; 
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .photo-wrap:hover img {
-    /* For Google Chrome */
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; 
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
+  /* For Google Chrome */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; 
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* Google Chrome 3.0-, IE 8.0-, Safari 3.0-, and Opera 10.0- */
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.75);
-    /* Google Chrome 4.0 - 42.0, Safari 4.0 - 8.0 & Opera 15.0 - 29.0 */
-    -webkit-animation: fade-in 1s; 
-    -moz-animation: fade-in 1s; /* Mozilla Firefox 5.0 - 15.0 */
-    -o-animation: fade-in 1s; /* Opera 12.0 - 14.0 */
-    animation: fade-in 1s;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* Google Chrome 3.0-, IE 8.0-, Safari 3.0-, and Opera 10.0- */
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.75);
+  /* Google Chrome 4.0 - 42.0, Safari 4.0 - 8.0 & Opera 15.0 - 29.0 */
+  -webkit-animation: fade-in 1s; 
+  -moz-animation: fade-in 1s; /* Mozilla Firefox 5.0 - 15.0 */
+  -o-animation: fade-in 1s; /* Opera 12.0 - 14.0 */
+  animation: fade-in 1s;
 }
 
 .modal ul {padding: 3px 0;}
 
 .modal li {
-    display: inline;
-    color: #668599;
-    font: 0.7em Geneva, "Lucida Sans Unicode", Helvetica, sans-serif, FontAwesome;
-    text-transform: uppercase;
-    line-height: 1.8;
+  display: inline;
+  color: #668599;
+  font: 0.7em Geneva, "Lucida Sans Unicode", Helvetica, sans-serif, 
+  FontAwesome;
+  text-transform: uppercase;
+  line-height: 1.8;
 }
 
-.modal li:nth-child(3), .modal li:nth-child(5), #photo-number {vertical-align: text-top;}
+.modal li:nth-child(3), .modal li:nth-child(5), #photo-number {
+  vertical-align: text-top;
+}
 
 .modal li.close {
-    float: right;
-    font: 1em FontAwesome;
-    line-height: 1.2;
-    margin: 0;
+  float: right;
+  font: 1em FontAwesome;
+  line-height: 1.2;
+  margin: 0;
 }
 
 .modal li.pause {display: none;}
 
 .modal-content {
-    position: relative;
-    display: none;
-    background-color: black;
-    margin: 5px auto;
-    padding: 12px;
-    -webkit-border-radius: 10px; /* Google Chrome 4.0 & Safari 3.1 - 4.0 */
-    -moz-border-radius: 10px; /* Mozilla Firefox 3.0 */
-    border-radius: 10px;
-    animation: enlarge 1s ease-in;
-    -webkit-animation: enlarge 1s ease-in; /* Google Chrome 4.0 - 42.0, Safari 4.0 - 8.0 & Opera 15.0 - 29.0 */
-    -moz-animation: enlarge 1s ease-in; /* Mozilla Firefox 5.0 - 15.0 */
-    -o-animation: enlarge 1s ease-in; /* Opera 12.0 - 14.0 */
+  position: relative;
+  display: none;
+  background-color: black;
+  margin: 5px auto;
+  padding: 12px;
+  -webkit-border-radius: 10px; /* Google Chrome 4.0 & Safari 3.1 - 4.0 */
+  -moz-border-radius: 10px; /* Mozilla Firefox 3.0 */
+  border-radius: 10px;
+  animation: enlarge 1s ease-in;
+  -webkit-animation: enlarge 1s ease-in; /* Google Chrome 4.0 - 42.0, 
+  Safari 4.0 - 8.0 & Opera 15.0 - 29.0 */
+  -moz-animation: enlarge 1s ease-in; /* Mozilla Firefox 5.0 - 15.0 */
+  -o-animation: enlarge 1s ease-in; /* Opera 12.0 - 14.0 */
 }
 
-.modal li span.small-list {font-size: 0.8em; line-height: 1.4; vertical-align: text-top;}
+.modal li span.small-list {
+  font-size: 0.8em; 
+  line-height: 1.4; 
+  vertical-align: text-top;
+}
 
 .big-list {font-size: 1.8em;}
 
 .over:hover {
-    color: #a9aeb1; 
-    -webkit-transition: color 0.5s; 
-    -moz-transition: color 0.5s; 
-    -o-transition: color 0.5s; 
-    transition: color 0.5s; 
-    cursor: pointer;
+  color: #a9aeb1; 
+  -webkit-transition: color 0.5s; 
+  -moz-transition: color 0.5s; 
+  -o-transition: color 0.5s; 
+  transition: color 0.5s; 
+  cursor: pointer;
 }
 
 .no-hover {color: #0c0f12;}
@@ -240,48 +259,53 @@ img, audio  {width: 100%;}
 .dark {color: #a9aeb1;}
 
 span.tab, span.tab2  {
-    z-index: -1;
-    position: absolute;
-    top: 50%;
-    background-color: #668599;
-    color: black;
-    font-size: 0.75em;
-    padding: 6px;
-    -webkit-transition: left 0.3s, right 0.3s; /* Google Chrom 4.0 - 26.0 & Safari 3.1 - 6.0 */
-    -moz-transition: left 0.3s, right 0.3s; /* Mozilla Firefox 4.0 - 15.0 */
-    -o-transition: left 0.3s, right 0.3s; /* Opera 10.5 - 12.0 */
-    transition: left 0.3s, right 0.3s;
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  background-color: #668599;
+  color: black;
+  font-size: 0.75em;
+  padding: 6px;
+  -webkit-transition: left 0.3s, right 0.3s; /* Google Chrom 4.0 - 26.0 & 
+  Safari 3.1 - 6.0 */
+  -moz-transition: left 0.3s, right 0.3s; /* Mozilla Firefox 4.0 - 15.0 */
+  -o-transition: left 0.3s, right 0.3s; /* Opera 10.5 - 12.0 */
+  transition: left 0.3s, right 0.3s;
 }
 
 .tab {
-    left: 0;
-    -webkit-border-radius: 50% 0 0 50%; /* Google Chrome 4.0 & Safari 3.1 - 4.0 */
-    -moz-border-radius: 50% 0 0 50%; /* Mozilla Firefox 3.0 */
-    border-radius: 50% 0 0 50%;
+  left: 0;
+  -webkit-border-radius: 50% 0 0 50%; /* Google Chrome 4.0 & 
+  Safari 3.1 - 4.0 */
+  -moz-border-radius: 50% 0 0 50%; /* Mozilla Firefox 3.0 */
+  border-radius: 50% 0 0 50%;
 }
 
 .tab2 {
-    right: 0;
-    -webkit-border-radius: 0 50% 50% 0; /* Google Chrome 4.0 & Safari 3.1 - 4.0 */
-    -moz-border-radius: 0 50% 50% 0; /* Mozilla Firefox 3.0 */
-    border-radius: 0 50% 50% 0;
+  right: 0;
+  -webkit-border-radius: 0 50% 50% 0; /* Google Chrome 4.0 & 
+  Safari 3.1 - 4.0 */
+  -moz-border-radius: 0 50% 50% 0; /* Mozilla Firefox 3.0 */
+  border-radius: 0 50% 50% 0;
 }
 
 .fade {
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: opacity 0.4s; /* Google Chrom 4.0 - 25.0 & Safari 3.1 - 6.0 */
-    -moz-transition: opacity 0.4s; /* Mozilla Firefox 4.0 - 15.0 */
-    -o-transition: opacity 0.4s; /* Opera 10.5 - 12.0 */
-    transition: visibility 0s 0.4s, opacity 0.4s; 
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s; /* Google Chrom 4.0 - 25.0 & 
+  Safari 3.1 - 6.0 */
+  -moz-transition: opacity 0.4s; /* Mozilla Firefox 4.0 - 15.0 */
+  -o-transition: opacity 0.4s; /* Opera 10.5 - 12.0 */
+  transition: visibility 0s 0.4s, opacity 0.4s; 
 }
 
 .dissolve {
-    opacity: 0;
-    -webkit-transition: opacity 3s; /* Google Chrom 4.0 - 25.0 & Safari 3.1 - 6.0 */
-    -moz-transition: opacity 3s; /* Mozilla Firefox 4.0 - 15.0 */
-    -o-transition: opacity 3s; /* Opera 10.5 - 12.0 */
-    transition: opacity 3s; 
+  opacity: 0;
+  -webkit-transition: opacity 3s; /* Google Chrom 4.0 - 25.0 & 
+  Safari 3.1 - 6.0 */
+  -moz-transition: opacity 3s; /* Mozilla Firefox 4.0 - 15.0 */
+  -o-transition: opacity 3s; /* Opera 10.5 - 12.0 */
+  transition: opacity 3s; 
 }
 
 .row {content: ""; clear: both; display: table;}
@@ -289,19 +313,19 @@ span.tab, span.tab2  {
 /* Google Chrome 4.0 - 42.0, Safari 4.0 - 8.0 & Opera 15.0 - 29.0 */
 @-webkit-keyframes enlarge {
   0% {
-      -webkit-transform: scale(0.28, 0.17); transform: scale(0.28, 0.17); 
-      -webkit-border-radius: 10%; /* Google Chrome 4.0 */
-      border-radius: 10%;
+    -webkit-transform: scale(0.28, 0.17); transform: scale(0.28, 0.17); 
+    -webkit-border-radius: 10%; /* Google Chrome 4.0 */
+    border-radius: 10%;
   }
   75% {
-      -webkit-transform: scale(0.28, 0.17); transform: scale(0.28, 0.17);  
-      -webkit-border-radius: 10%; /* Google Chrome 4.0 */
-      border-radius: 10%;
+    -webkit-transform: scale(0.28, 0.17); transform: scale(0.28, 0.17);  
+    -webkit-border-radius: 10%; /* Google Chrome 4.0 */
+    border-radius: 10%;
   }
   100% {
-      -webkit-transform: scale(1, 1); transform: scale(1, 1);   
-      -webkit-border-radius: 10px; /* Google Chrome 4.0 */
-      border-radius: 10px;
+    -webkit-transform: scale(1, 1); transform: scale(1, 1);   
+    -webkit-border-radius: 10px; /* Google Chrome 4.0 */
+    border-radius: 10px;
   }
 }
 
@@ -336,142 +360,148 @@ span.tab, span.tab2  {
 }
 
 @media only screen and (max-width: 285px) {
-   header li, footer li {font-size: 0.75em;} 
+  header li, footer li {font-size: 0.75em;} 
 }
 
 @media only screen and (min-device-width: 418px) {
-    #second {background-image: url("images/694_greylock.jpg");}
-    #third {background-image: url("images/721_volunteerPk.jpg");}
+  #second {background-image: url("images/694_greylock.jpg");}
+  #third {background-image: url("images/721_volunteerPk.jpg");}
 }
 
 @media only screen and (min-width: 520px) {
-    .col-t-1 {width: 8.33%;}
-    .col-t-2 {width: 16.66%;}
-    .col-t-3 {width: 25%;}
-    .col-t-4 {width: 33.33%;}
-    .col-t-5 {width: 41.66%;}
-    .col-t-6 {width: 50%;}
-    .col-t-7 {width: 58.33%;}
-    .col-t-8 {width: 66.66%;}
-    .col-t-9 {width: 75%;}
-    .col-t-10 {width: 83.33%;}
-    .col-t-11 {width: 91.66%;}
-    .col-t-12 {width: 100%;}
-    .wrap {float: left;}
-    .album, .songs {float: left; margin-bottom: 50px;}
-    .album {padding-right: 2%;}
-    .photos {padding: 2px;}    
-    #photo {padding: 50px 30px;}
-    #photo h2 {padding-bottom: 25px;}
-    span.tab, span.tab2 {display: inline;}
-    h1 {float: left; margin-right: 5px;}
-    h3 {padding: 9px;}
-    header ul {padding-top: 15px;}
-    header li {padding: 10px 0px;}
+  .col-t-1 {width: 8.33%;}
+  .col-t-2 {width: 16.66%;}
+  .col-t-3 {width: 25%;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+  .wrap {float: left;}
+  .album, .songs {float: left; margin-bottom: 50px;}
+  .album {padding-right: 2%;}
+  .photos {padding: 2px;}    
+  #photo {padding: 50px 30px;}
+  #photo h2 {padding-bottom: 25px;}
+  span.tab, span.tab2 {display: inline;}
+  h1 {float: left; margin-right: 5px;}
+  h3 {padding: 9px;}
+  header ul {padding-top: 15px;}
+  header li {padding: 10px 0px;}
 }
 
 @media only screen and (min-width: 695px) {
-    header {background-image: url("images/1081_carkeekpk.jpg");}
-    header li {padding: 10px;}
-    h1 {margin-right: 35px;}
-    p {max-width: 760px;}
-    #second {background-image: url("images/1083_greylock.jpg");}
-    #third {background-image: url("images/1037_volunteerPk.jpg");}
+  header {background-image: url("images/1081_carkeekpk.jpg");}
+  header li {padding: 10px;}
+  h1 {margin-right: 35px;}
+  p {max-width: 760px;}
+  #second {background-image: url("images/1083_greylock.jpg");}
+  #third {background-image: url("images/1037_volunteerPk.jpg");}
 }
 
 @media only screen and (min-width: 900px) {
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-    .wrap {padding: 1%;}
-    .wrap:nth-child(4) {clear: left;}
-    #about, #music, #photo {padding: 75px 30px;}
-    #music h2, #photo h2 {padding-bottom: 75px;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  .wrap {padding: 1%;}
+  .wrap:nth-child(4) {clear: left;}
+  #about, #music, #photo {padding: 75px 30px;}
+  #music h2, #photo h2 {padding-bottom: 75px;}
 }
 
 @media only screen and (min-width: 1024px) {
-    p {line-height: 1.7;}
+  p {line-height: 1.7;}
 }
 
 /* For laptops and desktops, turn on the parallax effect. */
 @media only screen and (min-device-width: 1024px) {
-    header, #second, #third {background-attachment: fixed;}
+  header, #second, #third {background-attachment: fixed;}
 }
 
 @media only screen and (min-device-width: 1038px) {
-    header {background-image: url("images/1373_carkeekpk.jpg");}
-    #second {background-image: url("images/1398_greylock.jpg");}
-    #third {background-image: url("images/1387_volunteerPk.jpg");}
+  header {background-image: url("images/1373_carkeekpk.jpg");}
+  #second {background-image: url("images/1398_greylock.jpg");}
+  #third {background-image: url("images/1387_volunteerPk.jpg");}
 }
 
 @media only screen and (min-width: 1374px) {
-    header {padding-top: 40px; padding-left: 60px; background-image: url("../images/1920_carkeekpk.jpg");}
-    footer {padding-left: 60px;}
-    #music, #photo {padding: 75px 60px;}
-    #music li::first-letter, #music li:first-letter, #music span {font-size: 1em;}
-    #second {background-image: url("images/1920_greylock.jpg");}
-    #third {background-image: url("images/1920_volunteerPk.jpg");}
+  header {
+    padding-top: 40px; 
+    padding-left: 60px; 
+    background-image: url("../images/1920_carkeekpk.jpg");
+  }
+  footer {padding-left: 60px;}
+  #music, #photo {padding: 75px 60px;}
+  #music li::first-letter, #music li:first-letter, #music span {
+    font-size: 1em;
+  }
+  #second {background-image: url("images/1920_greylock.jpg");}
+  #third {background-image: url("images/1920_volunteerPk.jpg");}
 }
 
 @media only screen and (min-width: 1920px) {
-    .col-b-1 {width: 8.33%;}
-    .col-b-2 {width: 16.66%;}
-    .col-b-3 {width: 25%;}
-    .col-b-4 {width: 33.33%;}
-    .col-b-5 {width: 41.66%;}
-    .col-b-6 {width: 50%;}
-    .col-b-7 {width: 58.33%;}
-    .col-b-8 {width: 66.66%;}
-    .col-b-9 {width: 75%;}
-    .col-b-10 {width: 83.33%;}
-    .col-b-11 {width: 91.66%;}
-    .col-b-12 {width: 100%;}
-    body {font-size: 150%; background-color: #EEE; line-height: 1.5;}
-    header {
-        line-height: 1; 
-        padding-top: 60px; 
-        padding-left: 90px; 
-        background-image: url("images/carkeekpk.jpg");
-    }
-    footer {padding-top: 25px; padding-left: 90px;}
-    h2 {text-shadow: 3px 3px 3px darkslategray;}
-    h3, li {line-height: 1;}
-    p {max-width: 50%;}
-    #about, #music, #photo {padding: 75px 90px;}
-    #music h2 {padding-bottom: 40px;}
-    #photo h2 {padding-bottom: 50px;}
-    #second {background-image: url("images/greylock.jpg");}
-    #third {background-image: url("images/volunteerPk.jpg");}
-    .wrap {padding: 35px;}
-    .wrap:nth-child(4) {clear: none;}
-    .wrap:nth-child(5) {clear: left;}
-    .songs {border: none; padding: 0 0 0 15px;}
-    .modal, .photos {line-height: 1;}
-    .photos {padding: 25px;}
+  .col-b-1 {width: 8.33%;}
+  .col-b-2 {width: 16.66%;}
+  .col-b-3 {width: 25%;}
+  .col-b-4 {width: 33.33%;}
+  .col-b-5 {width: 41.66%;}
+  .col-b-6 {width: 50%;}
+  .col-b-7 {width: 58.33%;}
+  .col-b-8 {width: 66.66%;}
+  .col-b-9 {width: 75%;}
+  .col-b-10 {width: 83.33%;}
+  .col-b-11 {width: 91.66%;}
+  .col-b-12 {width: 100%;}
+  body {font-size: 150%; background-color: #EEE; line-height: 1.5;}
+  header {
+    line-height: 1; 
+    padding-top: 60px; 
+    padding-left: 90px; 
+    background-image: url("images/carkeekpk.jpg");
+  }
+  footer {padding-top: 25px; padding-left: 90px;}
+  h2 {text-shadow: 3px 3px 3px darkslategray;}
+  h3, li {line-height: 1;}
+  p {max-width: 50%;}
+  #about, #music, #photo {padding: 75px 90px;}
+  #music h2 {padding-bottom: 40px;}
+  #photo h2 {padding-bottom: 50px;}
+  #second {background-image: url("images/greylock.jpg");}
+  #third {background-image: url("images/volunteerPk.jpg");}
+  .wrap {padding: 35px;}
+  .wrap:nth-child(4) {clear: none;}
+  .wrap:nth-child(5) {clear: left;}
+  .songs {border: none; padding: 0 0 0 15px;}
+  .modal, .photos {line-height: 1;}
+  .photos {padding: 25px;}
 }
 
 @media only screen and (min-width: 2800px) {
-    body {font-size: 300%; line-height: 1.5;}
-    h2, header a, footer a {text-shadow: 5px 5px 5px darkslategray;}
-    #about, #music, #photo {padding: 125px 90px;}
-    #photo h2, #music h2 {padding-bottom: 80px;}
-    .wrap {padding: 1% 65px;}
-    .album {padding-right: 3%;}
-    .songs {padding-left: 3%;}
-    .photos {padding: 45px;}
+  body {font-size: 300%; line-height: 1.5;}
+  h2, header a, footer a {text-shadow: 5px 5px 5px darkslategray;}
+  #about, #music, #photo {padding: 125px 90px;}
+  #photo h2, #music h2 {padding-bottom: 80px;}
+  .wrap {padding: 1% 65px;}
+  .album {padding-right: 3%;}
+  .songs {padding-left: 3%;}
+  .photos {padding: 45px;}
 }
 
 @media only screen and (min-width: 4000px) {
-    body {font-size: 400%;}
-    h2 {text-shadow: 10px 10px 10px darkslategray;}
-    #about, #music, #photo {padding: 250px 90px;}
+  body {font-size: 400%;}
+  h2 {text-shadow: 10px 10px 10px darkslategray;}
+  #about, #music, #photo {padding: 250px 90px;}
 }
