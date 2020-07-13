@@ -490,6 +490,8 @@ span.tab, span.tab2  {
 }
 
 @media only screen and (min-width: 2800px) {
+  header {background-image: url("images/carkeekpk4000.jpg");}
+  #second {background-image: url("images/greylock4000.jpg");}
   body {font-size: 300%; line-height: 1.5;}
   h2, header a, footer a {text-shadow: 5px 5px 5px darkslategray;}
   #about, #music, #photo {padding: 125px 90px;}
@@ -503,5 +505,8 @@ span.tab, span.tab2  {
 @media only screen and (min-width: 4000px) {
   body {font-size: 400%;}
   h2 {text-shadow: 10px 10px 10px darkslategray;}
+  header {background-image: url("images/carkeekpk7860.jpg");}
+  #second {background-image: url("images/greylock7860.jpg");}
+  #third {background-image: url("images/volunteerPk7860.jpg");}
   #about, #music, #photo {padding: 250px 90px;}
 }
