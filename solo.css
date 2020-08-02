@@ -104,7 +104,10 @@ p {
   text-align: center;
 }
 
-ul {list-style: none;}
+ul {
+  list-style: none;
+  display: inline-block;
+}
 
 ol {margin-left: 25px;}
 
@@ -390,7 +393,13 @@ span.tab, span.tab2  {
   span.tab, span.tab2 {display: inline;}
   h1 {float: left; margin-right: 5px;}
   h3 {padding: 9px;}
-  header ul {padding-top: 15px;}
+}
+
+@media only screen and (min-width: 610px) {
+  header ul {
+    padding-top: 15px;
+    min-width: 220px;
+  }
   header li {padding: 10px 0px;}
 }
 
@@ -491,11 +500,11 @@ span.tab, span.tab2  {
 
 @media only screen and (min-width: 2800px) {
   header {background-image: url("images/carkeekpk4000.jpg");}
-  #second {background-image: url("images/greylock4000.jpg");}
   body {font-size: 300%; line-height: 1.5;}
   h2, header a, footer a {text-shadow: 5px 5px 5px darkslategray;}
   #about, #music, #photo {padding: 125px 90px;}
   #photo h2, #music h2 {padding-bottom: 80px;}
+  #second {background-image: url("images/greylock4000.jpg");}
   .wrap {padding: 1% 65px;}
   .album {padding-right: 3%;}
   .songs {padding-left: 3%;}
@@ -504,8 +513,8 @@ span.tab, span.tab2  {
 
 @media only screen and (min-width: 4000px) {
   body {font-size: 400%;}
-  h2 {text-shadow: 10px 10px 10px darkslategray;}
   header {background-image: url("images/carkeekpk7860.jpg");}
+  h2 {text-shadow: 10px 10px 10px darkslategray;}
   #second {background-image: url("images/greylock7860.jpg");}
   #third {background-image: url("images/volunteerPk7860.jpg");}
   #about, #music, #photo {padding: 250px 90px;}
